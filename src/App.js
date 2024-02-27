@@ -1,10 +1,10 @@
 import Alert from './Alert';
 import './App.css';
 import TextForm from './TextForm';
-import About from './components/About';
+// import About from './components/About';
 import Navbar from './components/Navbar';
 import React,{useState} from 'react';
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+// import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 
 function App() {
 
@@ -74,7 +74,7 @@ const toogleMode = ()=>{
   return (
     <>
     {/* <body className="bd"> */}
-      <Router>
+      {/* <Router> */}
       <div className="blank">
         <h1>Text Utils</h1>
         {/* <div className="mode">
@@ -86,13 +86,14 @@ const toogleMode = ()=>{
       <Alert alert={alert} />
       <div className="container my-4">
 
-        <Routes>
+        {/* <Routes>
           <Route exact path='/about' element={<About />} />
-          <Route exact path='/' element={<TextForm showAlert={showAlert} heading="Enter the Text to Analyze" mode={mode}/>} /> 
-        </Routes>
-        
+          <Route exact path='/' element={} /> 
+          
+        </Routes> */}
+        <TextForm showAlert={showAlert} heading="Enter the Text to Analyze" mode={mode}/>
       </div>
-      </Router>
+      {/* </Router> */}
     {/* </body> */}
     </>
     
